@@ -95,11 +95,11 @@ public class Poi : MonoBehaviour
             Cursor.lockState = CursorLockMode.None; // 普通のカーソル
         }
 
-        // --- スライダー減少処理 ---
+        //スライダー減少処理
         if (mySlider != null)
             mySlider.value -= Time.deltaTime * decreaseSpeedPoi;
 
-        // --- 壊れ状態の処理 ---
+        //壊れ状態の処理
         if (isbroken)
         {
             breakTime -= Time.deltaTime;
@@ -111,7 +111,7 @@ public class Poi : MonoBehaviour
             }
         }
 
-        // --- 入力判定 ---
+        //入力判定
         bool inputPressed = false;
         if (currentMode == ControlMode.Keyboard)
         {
@@ -124,7 +124,7 @@ public class Poi : MonoBehaviour
                 inputPressed = true;
         }
 
-        // --- 入力があった場合の処理 ---
+        //入力があった場合の処理
         if (inputPressed)
         {
             if (!isbroken && isInTrigger && targetFish != null)

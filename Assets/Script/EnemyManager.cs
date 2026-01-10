@@ -11,9 +11,6 @@ public class FishManager : MonoBehaviour
     [SerializeField] float spawnFishTime;
     [SerializeField] float startSpawnFishTime;
 
-
-
-
     void Start()
     {
         // 初期生成
@@ -21,10 +18,6 @@ public class FishManager : MonoBehaviour
         {
             SpawnFish();
         }
-
-
-
-
 
     }
 
@@ -52,9 +45,6 @@ public class FishManager : MonoBehaviour
 
         ReplenishmentDGoldenFish();
         LimitDatu();
-
-
-
     }
 
     void SpawnFish()

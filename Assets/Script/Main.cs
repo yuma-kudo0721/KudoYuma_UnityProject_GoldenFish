@@ -51,10 +51,6 @@ public class Main : MonoBehaviour
 
     Ranking ranking;
 
-
-
-
-
     private enum HandState
     {
         Poi,
@@ -62,11 +58,6 @@ public class Main : MonoBehaviour
     }
 
     private HandState currentHandState = HandState.Poi;
-
-
-
-
-
 
     enum Mode
     {
@@ -141,7 +132,7 @@ public class Main : MonoBehaviour
 
                     // 手を表示する前に位置をポイと揃える
                     poi.transform.position = hand.transform.position;
-                    // 手 → ポイ に切り替えるときに即座にゲージを0にする
+                    // 手からポイ に切り替えるときに即座にゲージを0にする
                     mySlider.value = 0;
                     currentHandState = HandState.Poi;
                 }

@@ -18,7 +18,7 @@ public abstract class FishBase : MonoBehaviour, IFish
     public float acquisitionMoney = 1f;
     public GameObject defeatEffect;
 
-    public Sprite[] moveSprites;//歩く用のスプライトを入れる
+    public Sprite[] moveSprites;
 
     public float MoveAniTime = 0.1f;
     public float MoveAniTimer = 0f;
@@ -29,7 +29,7 @@ public abstract class FishBase : MonoBehaviour, IFish
     {
         movePosition = GetRandomPosition();
         deletePosition = GetRandomDeletePosition();
-        rb = GetComponent<Rigidbody2D>();
+
 
     }
 
@@ -69,6 +69,8 @@ public abstract class FishBase : MonoBehaviour, IFish
 
 
     }
+
+    //魚がすくわれたときの演出
     public virtual void OnDefeated()
     {
 
@@ -84,8 +86,6 @@ public abstract class FishBase : MonoBehaviour, IFish
             Instantiate(defeatEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
-
-
     }
 
     public virtual void Update()
@@ -96,7 +96,7 @@ public abstract class FishBase : MonoBehaviour, IFish
         {
             if (countDown <= 0)
             {
-                // 寿命が尽きたらdeletePositionに移動
+                // 時間が０になったらdeletePositionに移動
                 movePosition = deletePosition;
             }
             else
@@ -105,7 +105,7 @@ public abstract class FishBase : MonoBehaviour, IFish
             }
         }
 
-        // deletePositionに到達したらオブジェクト破棄
+        // deletePositionに到達したら魚消す
         if (countDown <= 0 && Vector3.Distance(transform.position, deletePosition) < 0.01f)
         {
             Destroy(gameObject);

@@ -5,8 +5,8 @@ using UnityEngine;
 
 public interface IFish
 {
-    int GetScore();      // この魚を倒したときに加算されるスコアを返す
-    float GetTime();     // この魚を倒したときに加算される制限時間を返す
-    float GetMoney();    // この魚を倒したときに得られる金を返す
+    int GetScore();      // 魚を捕った時のスコア
+    float GetTime();     // この魚を捕ったときに加算される時間
+    float GetMoney();    // 魚を捕った時の金
     void OnDefeated();   // 倒されたときの挙動
 }
