@@ -25,11 +25,6 @@ public abstract class FishBase : MonoBehaviour, IFish
     int MoveAniSpriteNum = 0;
     public SpriteRenderer spriteRenderer;
 
-
-
-
-
-
     public virtual void Start()
     {
         movePosition = GetRandomPosition();
