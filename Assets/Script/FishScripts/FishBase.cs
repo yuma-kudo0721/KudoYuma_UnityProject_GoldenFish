@@ -30,7 +30,6 @@ public abstract class FishBase : MonoBehaviour, IFish
         movePosition = GetRandomPosition();
         deletePosition = GetRandomDeletePosition();
 
-
     }
 
     public virtual int GetScore()
@@ -65,15 +64,11 @@ public abstract class FishBase : MonoBehaviour, IFish
                 MoveAniTimer += Time.deltaTime;
             }
         }
-
-
-
     }
 
     //魚がすくわれたときの演出
     public virtual void OnDefeated()
     {
-
         ScaleEffect se = GetComponent<ScaleEffect>();
 
         if (se != null)
