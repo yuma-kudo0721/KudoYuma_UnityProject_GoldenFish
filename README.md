@@ -24,7 +24,11 @@
 - 開発期間：2025年5月 ～ 2025年8月12日  
 - チーム：個人制作  
 - 担当：すべて  
-- 使用技術：Unity 2022.3.44f1 / C# / Visual Studio Code / PlayFab  
+- 使用技術：
+  - Unity 2022.3.44f1  
+  - C#  
+  - Visual Studio Code  
+  - Playfab  
 
 ### 対応プラットフォーム
 - PC
