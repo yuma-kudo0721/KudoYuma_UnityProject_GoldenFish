@@ -32,7 +32,7 @@
 
 ### 対応プラットフォーム
 - PC
-- Web(iphone/andoroid)
+- Web
 
 ## プログラム面（こだわり）
 - 魚キャラクターの共通挙動をクラス設計で管理  
@@ -53,4 +53,5 @@
 - 身近な友人など多くの人に遊んでもらうことができ、嬉しかったです。  
 - 友人からのフィードバックを取り入れながら機能改善を行い、ゲームをブラッシュアップしていく過程は非常に良い経験になりました。  
 
-プレイ動画：https://youtu.be/p_B6RUl-RSM
+- プレイ動画：https://youtu.be/p_B6RUl-RSM
+- プレイ：https://play.unity.com/api/v1/games/game/50998b27-87e5-427e-bfe2-0054b1d8b219/build/latest/frame
