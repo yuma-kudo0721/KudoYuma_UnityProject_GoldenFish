@@ -54,4 +54,4 @@
 - 友人からのフィードバックを取り入れながら機能改善を行い、ゲームをブラッシュアップしていく過程は非常に良い経験になりました。  
 
 - プレイ動画：https://youtu.be/p_B6RUl-RSM
-- プレイ：https://play.unity.com/api/v1/games/game/50998b27-87e5-427e-bfe2-0054b1d8b219/build/latest/frame
+- プレイ：https://play.unity.com/ja/games/50998b27-87e5-427e-bfe2-0054b1d8b219/6yer6a2a44gz44gp44ge
